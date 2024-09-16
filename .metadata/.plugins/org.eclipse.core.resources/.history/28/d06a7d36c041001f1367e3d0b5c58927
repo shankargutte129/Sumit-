@@ -1,0 +1,10 @@
+package with_Maven;
+
+public class BasicSelect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

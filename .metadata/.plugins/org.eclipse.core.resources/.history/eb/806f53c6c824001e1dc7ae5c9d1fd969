@@ -1,0 +1,15 @@
+package Basic;
+
+public class NonPrimitiveDatatypes {
+
+	public NonPrimitiveDatatypes() {
+		
+	}
+
+	public static void main(String[] args) {
+		String name = new String("Shankar");
+		System.out.println(name.charAt(2));
+
+	}
+
+}

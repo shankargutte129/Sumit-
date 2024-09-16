@@ -1,0 +1,10 @@
+package LearnCoding;
+
+public class Do_whhile_sum_of_evenOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

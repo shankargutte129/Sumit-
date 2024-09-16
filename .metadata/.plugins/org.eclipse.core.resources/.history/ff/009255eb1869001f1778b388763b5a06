@@ -1,0 +1,26 @@
+package Core_java;
+import java.util.Scanner;
+
+public class AlphaNumericPass {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String password= sc.nextLine();
+		
+		if(password.equals(Tcs@9007))
+		{
+			System.out.println("Hi Sumit /nWelcome to the TATA Family");
+		}
+		
+		else
+		{
+			System.out.println("Please enter correct password");
+		}
+		
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package launch_browser;
+
+public class LaunchCromeBrowser {
+
+	public static void main(String[] args) {
+		CromeDriver driver = new CromeDriver();
+		
+		System.setProperty("Syswebdriver.crome.driver", "C:\\browserdrivers")
+		
+		
+		driver.get("https://www.selenium.dev/downloads/");
+
+	}
+
+}

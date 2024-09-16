@@ -1,0 +1,11 @@
+package Arrey;
+
+public class Arrey_1D_with_for_each {
+
+	public static void main(String[] args) {
+		
+		int a [] = new int[5];
+
+	}
+
+}

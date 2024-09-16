@@ -1,0 +1,34 @@
+package Deepak;
+
+import java.util.Scanner;
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+//		String str = "Deepak";
+//		String newStr = "";
+//
+//		for (int i = 0; i < str.length() - 1; i++) {
+//			System.out.println(str.length()-1);
+//			newStr += newStr.charAt(i);
+//
+//		}
+//		// deepak
+//		// kapeed
+//		System.out.println(newStr);
+
+//		String str = "deepak", istr = "";
+//		for (int i=0;i<=str.length();i++) {
+//			str = str.charAt(i);
+//		}
+		
+		int[][] arr = new int [2][2]; 
+	    for (int i = 0; i < 2; i++) { 
+	        for (int j = 0; j < 2; j++) { 
+	            System.out.print(arr[i][j] + " "); 
+	        } 
+	    } System.out.println();
+
+	}
+}

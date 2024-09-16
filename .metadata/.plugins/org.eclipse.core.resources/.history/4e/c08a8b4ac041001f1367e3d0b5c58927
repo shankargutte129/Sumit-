@@ -1,0 +1,14 @@
+package with_Maven;
+
+import org.openqa.selenium.WebDriver;
+
+public class BasicSelect {
+	public static String brawser;
+	public static WebDriver driver;
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

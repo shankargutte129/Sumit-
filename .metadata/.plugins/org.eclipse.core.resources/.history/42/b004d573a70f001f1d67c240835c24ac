@@ -1,0 +1,14 @@
+package with_Maven;
+
+import org.openqa.selenium.WebDriver;
+
+public class PrintPrise {
+	public static String brawser = "Chrome";
+	public static WebDriver driver;
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

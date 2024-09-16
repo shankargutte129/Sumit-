@@ -1,0 +1,11 @@
+package Test;
+
+public class CheckTitleWithAssert {
+	
+	public void CheckTitle()
+	{
+		String ActualTitle = "Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com";
+		
+	}
+
+}

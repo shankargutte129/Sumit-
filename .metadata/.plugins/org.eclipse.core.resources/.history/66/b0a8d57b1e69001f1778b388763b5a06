@@ -1,0 +1,44 @@
+package Core_java;
+import java.util.Scanner;
+
+public class UsernamePassword {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Please enter Username");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String username = sc.nextLine();
+		String password = sc.nextLine();
+		
+		if(username.equals("Sumit@gmail.com"))
+		{
+						
+			System.out.println("Please, Enter Password");
+			
+		}
+		else if(username!="Sumit@gmail.com")
+		{
+			System.out.println("Please, enter correct username");
+		}
+		else if(password.equals("Sumit9007"))
+		{
+						
+			System.out.println("Please, Enter Password");
+			
+		}
+		else if(username!="Sumit@gmail.com")
+		{
+			System.out.println("Please, enter correct username");
+		}
+		else
+		{
+			System.out.println("Hello Bro");
+		}
+		
+		
+		
+	}
+
+}

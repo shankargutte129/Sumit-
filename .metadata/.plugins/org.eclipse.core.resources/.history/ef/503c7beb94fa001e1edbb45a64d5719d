@@ -1,0 +1,11 @@
+package launch_browser;
+
+public class LaunchCromeBrowser {
+
+	public static void main(String[] args) {
+		CromeDriver driver = new CromeDriver();
+		driver.get("https://www.selenium.dev/downloads/");
+
+	}
+
+}

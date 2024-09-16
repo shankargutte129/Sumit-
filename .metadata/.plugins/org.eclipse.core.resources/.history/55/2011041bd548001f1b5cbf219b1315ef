@@ -1,0 +1,104 @@
+package with_Maven;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AutoSugestDropDown {
+	
+	public static String brawser = "Chrome";
+	 
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		if (brawser.equals("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			
+		}else if (brawser.equals("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			
+		}else if (brawser.equals("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		driver.get("https://www.makemytrip.com/");
+		driver.manage().window().maximize();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("//span[@data-cy='closeModal']")).click();
+		driver.findElement(By.xpath("//span[text()='From']")).click();
+		WebElement from = driver.findElement(By.xpath("//input[@placeholder='From']"));
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		from.sendKeys("Pune");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		from.sendKeys(Keys.ARROW_DOWN);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		from.sendKeys(Keys.ENTER);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("//span[@class='lbl_input appendBottom10' and text()='To']")).click();
+		WebElement search2 = driver.findElement(By.xpath("//input[@placeholder='To']"));
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		search2.sendKeys("kolkata");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		search2.sendKeys(Keys.DOWN);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		search2.sendKeys(Keys.ENTER);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.close();
+		
+	}
+
+}

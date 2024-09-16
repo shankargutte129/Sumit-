@@ -1,0 +1,17 @@
+package Core_java;
+
+public class Variables {
+	int a=100;
+	static float f=10.0;
+	
+	public static void main(String[] args) {
+		boolean c=true;
+		final a=50;
+		Variables v= new Variables();
+		
+		
+		System.out.println(v.a);
+
+	}
+
+}

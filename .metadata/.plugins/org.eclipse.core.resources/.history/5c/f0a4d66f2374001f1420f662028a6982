@@ -1,0 +1,52 @@
+package with_Maven;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Personal_Xpath {
+	public static String brawser = "Chrome";
+	public static WebDriver driver;
+	
+	
+	public static void main(String[] args) {
+		if (brawser.equals("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if(brawser.equals("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		else if (brawser.equals("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		
+		driver.get("https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569870%7Cb%7Cfacebook%20create%20new%20account%7C&placement=&creative=589460569870&keyword=facebook%20create%20new%20account&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221432%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-298831213137%26loc_physical_ms%3D9301536%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwmMayBhDuARIsAM9HM8ef2y10cYjeZ-0ukHksYQnbFk393rcqkjCalSFHs5yM8bEgjhLTOOYaArIQEALw_wcB");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Shankar");
+		driver.findElement(By.xpath("//input[@name='lastname' or aria-label='Surname' ]")).sendKeys("Gutte");
+		driver.findElement(By.xpath("//input[starts-with(@aria-label,'Mobile number or email address')]")).sendKeys("shankargutte125@gmail.com");
+		driver.findElement(By.xpath("//input[contains(@name,'email_confirmation__')]")).sendKeys("shankargutte125@gmail.com");
+		driver.findElement(By.xpath("//input[@class='inputtext _58mg _5dba _2ph-' and @autocomplete='new-password']")).sendKeys("123456@abc");
+		driver.findElement(By.xpath("//select[@name='birthday_day']//child::option[6]")).click();
+		driver.findElement(By.xpath("//select[@name='birthday_month']//child::option[12]")).click();
+		driver.findElement(By.xpath("//select[@title=\"Year\"]//child::option[28]")).click();
+		driver.findElement(By.xpath("//label[text()='Male']")).click();
+		driver.findElement(By.xpath("//a[text()='Already have an account?']")).click();
+		driver.findElement(By.xpath("//input[@id='email' and @autocomplete='username' ]")).sendKeys("9175120291");
+		driver.findElement(By.xpath("//input[@id='pass' and @placeholder='Password']")).sendKeys("112255");
+		driver.findElement(By.xpath("//button[@id='loginbutton' or @type='submit']")).click();
+		
+		//driver.close();
+				
+		
+
+	}
+
+}

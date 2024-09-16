@@ -1,0 +1,13 @@
+package Arrey;
+
+public class Arrey_2D_for_loop {
+
+	public static void main(String[] args) {
+		
+		int a [][] = new int[2][2];
+		
+		System.out.println("Enter arrey elements =");
+
+	}
+
+}

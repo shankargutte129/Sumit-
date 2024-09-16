@@ -1,0 +1,23 @@
+package LearnCoding;
+
+import java.util.Scanner;
+
+public class For_loop_tables {
+
+	public For_loop_tables() {
+		
+	}
+
+	public static void main(String[] args) {
+	
+		System.out.println("Enter number of which table you want = ");
+		Scanner sc = new Scanner(System.in);
+		int j = sc.nextInt();
+
+		for (; j<=(j*10); (j+j)) 
+		{
+			System.out.println(j);
+		}
+	}
+
+}

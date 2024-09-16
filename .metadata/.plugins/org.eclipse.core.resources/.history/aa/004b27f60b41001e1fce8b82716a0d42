@@ -1,0 +1,10 @@
+package LearnCoding;
+
+public class Increment_decrement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

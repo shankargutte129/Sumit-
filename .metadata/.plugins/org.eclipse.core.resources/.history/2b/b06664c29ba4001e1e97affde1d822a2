@@ -1,0 +1,17 @@
+package Shankar;
+import java.util.Scanner;
+
+public class termsofAP {
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	int x=s.nextInt();
+	int n=0;
+	for (int i=1; i<=x; i++) {
+		 n=3*i+2;
+		 if (n%4!=0) 
+		 {
+			 System.out.print(n + " "); 
+		 }
+	}
+}
+}

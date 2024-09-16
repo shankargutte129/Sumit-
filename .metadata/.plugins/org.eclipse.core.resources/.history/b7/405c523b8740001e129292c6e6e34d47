@@ -1,0 +1,10 @@
+package LearnCoding;
+
+public class sumOfEvenNumber_do_while {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

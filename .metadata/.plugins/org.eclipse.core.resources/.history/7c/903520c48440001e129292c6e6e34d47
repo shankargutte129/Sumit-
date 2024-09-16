@@ -1,0 +1,14 @@
+package LearnCoding;
+
+public class Reverse_number_while_loop {
+
+	public Reverse_number_while_loop() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package Basic;
+
+public class NonPrimitiveDatatypes {
+
+	public NonPrimitiveDatatypes() {
+		
+	}
+
+	public static void main(String[] args) {
+		String name = new String("Shankar");
+		String name1= new String("Praju");
+		System.out.println(name.charAt(2));
+		String love = name+ " and " +name1;
+		
+
+	}
+
+}
